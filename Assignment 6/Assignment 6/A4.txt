@@ -1,0 +1,8 @@
+from selenium import webdriver
+
+
+driver = webdriver.Chrome()
+driver.get("https://lms.umt.edu.pk/login/index.php")
+driver.find_element_by_id("username").send_keys("F2019065206")
+driver.find_element_by_id("password").send_keys("Kitkat@1998")
+driver.find_element_by_id("loginbtn").click()
